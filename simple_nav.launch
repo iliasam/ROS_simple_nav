@@ -1,0 +1,11 @@
+<launch>
+
+
+
+	<!-- Run the costmap node -->
+  	<node name="simple_nav" pkg="simple_nav" type="simple_nav"  output="screen">
+		<rosparam file="$(find simple_nav)/bin/costmap_params.yaml" command="load" ns="global_costmap" />
+		<param name="max_angular_speed" value="0.7"/>
+  	</node>
+	
+</launch>

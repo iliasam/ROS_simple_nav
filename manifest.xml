@@ -1,0 +1,18 @@
+<package>
+  <description brief="simple_nav">
+     This is a simple navigation node for the ROS.
+  </description>
+  <author>iliasam</author>
+  <license></license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+  <depend package="roscpp"/>
+  <depend package="sensor_msgs"/>
+  <depend package="global_planner"/>
+  <depend package="costmap_2d"/>
+  <depend package="tf"/>
+
+
+</package>
+
+

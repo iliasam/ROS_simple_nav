@@ -1,0 +1,15 @@
+global_frame: map
+robot_base_frame: base_link
+robot_radius: 0.15
+static_map: true
+transform_tolerance: 0.5
+
+plugins:
+   - {name: static_layer, type: "costmap_2d::StaticLayer"}
+   - {name: inflation, type: "costmap_2d::InflationLayer"}
+
+static_layer:
+  map_topic: map
+
+inflation:
+  inflation_radius: 0.19

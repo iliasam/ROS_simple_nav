@@ -1,0 +1,10 @@
+<launch>
+
+
+
+	<!-- Run the costmap node -->
+  	<node name="simple_nav" pkg="simple_nav" type="simple_nav"  output="screen" launch-prefix="gdbserver localhost:10000">
+    		  <rosparam file="/home/user/roomba/simple_nav/bin/costmap_params.yaml" command="load" ns="global_costmap" /> 
+  	</node>
+	
+</launch>

@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1420554234 source:/home/user/roomba/simple_nav/Class1.cpp
+	<cmath>
+	<cstdlib>
+
+1424541962 source:/home/user/roomba/simple_nav/filter.cpp
+	<ros/ros.h>
+	<sensor_msgs/LaserScan.h>
+	"filter.h"
+	"Class1.h"
+	<visualization_msgs/Marker.h>
+	<nav_msgs/Odometry.h>
+	"math.h"
+
+1420812810 /home/user/roomba/simple_nav/filter.h
+	<sensor_msgs/LaserScan.h>
+	<string>
+	<visualization_msgs/Marker.h>
+	<nav_msgs/Odometry.h>
+
+1420553730 /home/user/roomba/simple_nav/Class1.h
+	<math.h>
+
+1515004577 source:/home/user/roomba/simple_nav/simple_nav.cpp
+	<ros/ros.h>
+	<sensor_msgs/LaserScan.h>
+	"simple_nav.h"
+	<visualization_msgs/Marker.h>
+	<nav_msgs/Odometry.h>
+	"math.h"
+	<global_planner/planner_core.h>
+	<tf/transform_listener.h>
+	<costmap_2d/costmap_2d_ros.h>
+
+1420812810 /home/user/roomba/simple_nav/simple_nav.h
+	<sensor_msgs/LaserScan.h>
+	<string>
+	<visualization_msgs/Marker.h>
+	<nav_msgs/Odometry.h>
+
