@@ -37,4 +37,6 @@ Now this is single linear speed for the robot.
 * ~goal_dist_accur (double, default: 0.1)  
 If the distance between the current robot pose and the goal is less than this value than robot stops.
 
+Some parameters of "costmap_2d" are stored in "/bin/costmap_params.yaml" file.
+
 
