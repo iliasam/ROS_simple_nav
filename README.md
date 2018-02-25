@@ -4,7 +4,8 @@ There is no local planner been used, so that can cause robot bump to some obstac
 This node periodically create global plan to the goal and filter it.  
 Robot simply goes by the points of this plan.  
 
-This node was tested at Orange Pi PC with hector_slam running. The performance of this device was enough to run all navigation. 
+This node was tested at Orange Pi PC with hector_slam running. The performance of this device was enough to run all navigation.  
+Example of working: https://www.youtube.com/watch?v=W3qkPr2p2U0
 
 Это простой узел навигации для ROS.  
 Здесь не использутся локальный планировщик пути, поэтому робот может сталкиваться с объектами, которых нет на карте.  
