@@ -1,20 +1,27 @@
 # simple_nav
 This is a simple navigation node for the ROS.  
 There is no local planner been used, so that can cause robot bump to some obstacles, which does not present at the map.
+This node periodically create global plan to the goal and filter it.  
+Robot simply goes by the points of this plan.
 
-Subscribed Topics
+Это простой узел навигации для ROS.  
+Здесь не использутся локальный планировщик пути, поэтому робот может сталкиваться с объектами, которых нет на карте.  
+Этот узел периодически прокладывает глобальный план от робота до целевой точки и производит его фильтрацию, так что число точек в пути значительно сокращается.  
+Затем робот просто следует ко второй точке в этом пути (первой точкой являются стартовые координаты робота).
+
+### Subscribed Topics
 * "/move_base_simple/goal" <geometry_msgs/PoseStamped> - goal point.
 * "/map" <nav_msgs/OccupancyGrid>
 * "/tf" <tf/tfMessage>  
 /map → /base_link (Usually provided by a node responsible for odometry or localization).
 
-Published Topics
+### Published Topics
 * <nav_msgs/OccupancyGrid>
 * "/simple_path" <nav_msgs/Path> - global path for the robot.
 * "/vis_marker" <visualization_msgs/Marker> - marker (arrow) to the local target point of the robot.
 * "/cmd_vel" <geometry_msgs/Twist> - speed commands for the robot.
 
-Parameters
+### Parameters
 * ~filter_epsilon (double, default: 0.05)   
 Level of global path filtering (bigger value - stronger filtering)
 * ~min_angular_speed (double, default: 0.15)  
