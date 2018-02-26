@@ -5,11 +5,11 @@ This node periodically create global plan to the goal and filter it.
 Robot simply goes by the points of this plan.  
 
 This node was tested at Orange Pi PC with hector_slam running. The performance of this device was enough to run all navigation.  
-Example of working: https://www.youtube.com/watch?v=W3qkPr2p2U0
+Example of working: https://www.youtube.com/watch?v=W3qkPr2p2U0 and another one: https://www.youtube.com/watch?v=jN23EdEAeXU
 
 Это простой узел навигации для ROS.  
 Здесь не использутся локальный планировщик пути, поэтому робот может сталкиваться с объектами, которых нет на карте.  
-Этот узел периодически прокладывает глобальный план от робота до целевой точки и производит его фильтрацию, так что число точек в пути значительно сокращается.  
+Этот узел периодически прокладывает глобальный путь от робота до целевой точки и производит его фильтрацию, так что число точек в пути значительно сокращается.  
 Затем робот просто следует ко второй точке в этом пути (первой точкой являются стартовые координаты робота).  
 
 Этот узел был проверен на Orange Pi PC совместно с hector_slam. Производительности этого компьютера достаточно, чтобы поддерживать работу вей навигации.
